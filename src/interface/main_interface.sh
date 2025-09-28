@@ -2,6 +2,7 @@
 source src/interface/main_interface_options.sh
 
 function build_main_interface() {
+    clear
     echo -e "############################################\n               NETWORKING TOOL \n############################################"
     
     ctr=0
@@ -10,8 +11,8 @@ function build_main_interface() {
             printf $i"\t\t"
             ctr=$(($ctr+1))
         else
-            printf "\n\n"
-            ctr=0
+            printf "\n\n$i\t\t"
+            ctr=1
         fi
     done
 }

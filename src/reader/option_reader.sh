@@ -1,7 +1,8 @@
 #!/bin/bash
 
 function option_reader() {
-    read option
+    echo -e "\n\n"
+    read -p "Select an option from the menu (enter only the corresponding number): " option
     
     options_number=${#main_interface_options[@]}
     
@@ -13,6 +14,7 @@ function option_reader() {
     done
 
     if [ $option_number_valid = "false" ]; then
+        echo ${error_messages[0]}
         exit 1
     fi
 }
