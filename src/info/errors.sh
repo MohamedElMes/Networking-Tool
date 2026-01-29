@@ -2,4 +2,5 @@
 
 error_messages=(
     "Error : Invalid option number. Make sure to choose a valid option."
+    "Error : Invalid IP address"
 )
